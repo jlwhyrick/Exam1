@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emma\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj": {}
+    "C:\\Users\\katia\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emma\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj": {
+    "C:\\Users\\katia\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emma\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj",
+        "projectUniqueName": "C:\\Users\\katia\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj",
         "projectName": "ExamApp",
-        "projectPath": "C:\\Users\\Emma\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj",
-        "packagesPath": "C:\\Users\\Emma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emma\\source\\repos\\Exam1\\ExamApp\\obj\\",
+        "projectPath": "C:\\Users\\katia\\source\\repos\\Exam1\\ExamApp\\ExamApp.csproj",
+        "packagesPath": "C:\\Users\\katia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\katia\\source\\repos\\Exam1\\ExamApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Emma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\katia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

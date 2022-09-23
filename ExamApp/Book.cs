@@ -8,46 +8,46 @@ namespace ExamApp
 {
     public class Book
     {
-        private int _pageNum;
-        private int _curPageNum;
-        private List<int> _markList;
-        private string _title;
-        private string _author;
+        public int PageNum;
+        public int CurPageNum;
+        public List<int> MarkList;
+        public string Title;
+        public string Author;
         
-        public Book( int pageNum, int curPage, string title, string author)
+        public Book( int pageNum, string title, string author)
         {
-            _pageNum = pageNum;
-            _curPageNum = curPage;
-            _title = title;
-            _author = author;
+            PageNum = pageNum;
+            CurPageNum = 1;
+            Title = title;
+            Author = author;
         }
 
         public void AddBookmark(int page)
         {
-            if( _markList.Count < 5 )
+            if( MarkList.Count < 5 )
             {
-                _markList.Add(page);
+                MarkList.Add(page);
             }
         }
 
         public List<int> GetBookMarks()
         {
-            return _markList;
+            return MarkList;
         }
 
         public string GetTitle()
         {
-            return _title;
+            return Title;
         }
 
         public int GetCurPage()
         {
-            return _curPageNum;
+            return CurPageNum;
         }
 
         public int GetPageNum()
         {
-            return _pageNum;
+            return PageNum;
         }
 
     }
