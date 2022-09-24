@@ -4,27 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.IO;
 
 namespace ExamApp
 {
     public class Control
     {
         private Book _book;
-        private BindingList<Book> _bookList = new BindingList<Book>();
+        public BindingList<Book> BookList = new BindingList<Book>();
 
         public Control()
         {
-            _bookList.AllowEdit = true;
+            BookList.AllowEdit = true;
         }
 
         public void Synchronize()
         {
-
+            BookList = CreateBookLibrary();
         }
 
         public Book OpenBook(int bookIndex)
         {
-            _book = _bookList[bookIndex]
+            _book = BookList[bookIndex];
             return _book;
         }
 
@@ -47,26 +48,33 @@ namespace ExamApp
 
         public void Set(int i)
         {
-            _book.MarkList.Add(i);
+            _book.AddBookmark(i);
         }
 
         public void Remove(int i)
         {
-            _book.MarkList.Remove(i);
+            _book.RemoveBookmark(i);
         }
 
-        public List<string> CreateBookLibrary()
+        public BindingList<Book> CreateBookLibrary()
         {
+            BindingList<Book> BookList = new BindingList<Book>();
             using (StreamReader stream = new StreamReader("BookLibrary.txt"))
             {
                 while (!stream.EndOfStream)
                 {
                     string line = stream.ReadLine();
                     string[] info = line.Split(',');
-                    Book newBook = Book(Convert.ToInt32(info[0]), info[1], info[2]);
-                    _bookList.Add(newBook);
+                    Book newBook = new Book(Convert.ToInt32(info[0]), info[1], info[2]);
+                    BookList.Add(newBook);
                 }
-            } 
+            }
+            return BookList;
+        }
+
+        public Book GetBook()
+        {
+            return _book;
         }
     }
 }

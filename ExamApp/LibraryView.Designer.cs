@@ -51,6 +51,7 @@ namespace ExamApp
             this.uxOpenBook.TabIndex = 1;
             this.uxOpenBook.Text = "Open Book";
             this.uxOpenBook.UseVisualStyleBackColor = true;
+            this.uxOpenBook.Click += new System.EventHandler(this.uxOpenBook_Click);
             // 
             // uxUpdateView
             // 
@@ -60,6 +61,7 @@ namespace ExamApp
             this.uxUpdateView.TabIndex = 2;
             this.uxUpdateView.Text = "Update View";
             this.uxUpdateView.UseVisualStyleBackColor = true;
+            this.uxUpdateView.Click += new System.EventHandler(this.uxUpdateView_Click);
             // 
             // LibraryView
             // 

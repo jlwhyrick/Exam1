@@ -16,3 +16,4 @@ C:\Users\Emma\source\repos\Exam1\ExamApp\obj\Debug\net5.0-windows\ExamApp.dll
 C:\Users\Emma\source\repos\Exam1\ExamApp\obj\Debug\net5.0-windows\ref\ExamApp.dll
 C:\Users\Emma\source\repos\Exam1\ExamApp\obj\Debug\net5.0-windows\ExamApp.pdb
 C:\Users\Emma\source\repos\Exam1\ExamApp\obj\Debug\net5.0-windows\ExamApp.genruntimeconfig.cache
+C:\Users\Emma\source\repos\Exam1\ExamApp\obj\Debug\net5.0-windows\ExamApp.BookView.resources

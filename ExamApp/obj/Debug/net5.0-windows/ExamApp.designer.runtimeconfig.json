@@ -6,8 +6,8 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\katia\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\katia\\.nuget\\packages"
+      "C:\\Users\\Emma\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Emma\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

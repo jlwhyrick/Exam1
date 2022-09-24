@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.IO;
 
 namespace ExamApp
 {
@@ -10,7 +12,7 @@ namespace ExamApp
     {
         public int PageNum;
         public int CurPageNum;
-        public List<int> MarkList;
+        public BindingList<int> MarkList = new BindingList<int>();
         public string Title;
         public string Author;
         
@@ -30,7 +32,15 @@ namespace ExamApp
             }
         }
 
-        public List<int> GetBookMarks()
+        public void RemoveBookmark(int page)
+        {
+            if( MarkList.Contains(page))
+            {
+                MarkList.Remove(page);
+            }
+        }
+
+        public BindingList<int> GetBookMarks()
         {
             return MarkList;
         }
@@ -48,6 +58,11 @@ namespace ExamApp
         public int GetPageNum()
         {
             return PageNum;
+        }
+
+        public override string ToString()
+        {
+            return $"{Title} by {Author}";
         }
 
     }
